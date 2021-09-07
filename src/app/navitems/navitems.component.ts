@@ -20,9 +20,18 @@ export class NavitemsComponent {
       link: "login"
     },
     {
+      text: "Account Details",
+      link: "account"
+    },
+    {
     text:"Transaction",
     link:"transaction"
-    }
+    },
+    {
+      text:"Mini Statement",
+      link:"transdetails"
+      }
+
   ]
   };
 

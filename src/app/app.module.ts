@@ -10,6 +10,8 @@ import { NavitemsComponent } from './navitems/navitems.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TransactionComponent } from './transaction/transaction.component';
+import { AccountComponent } from './account/account.component';
+import { TransdetailsComponent } from './transdetails/transdetails.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TransactionComponent } from './transaction/transaction.component';
     LoginComponent,
      HeaderComponent,
      NavitemsComponent,
-     TransactionComponent
+     TransactionComponent,
+     AccountComponent,
+     TransdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,12 @@ import { TransactionComponent } from './transaction/transaction.component';
     },
     {
       path:"transaction", component:TransactionComponent
+    },
+    {
+      path:"account", component:AccountComponent 
+    },
+    {
+      path:'transdetails', component:TransdetailsComponent
     },
     {
       path:'', component:LoginComponent
